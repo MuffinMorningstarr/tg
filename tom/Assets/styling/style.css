@@ -1,0 +1,524 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+:root {
+  --nav-color : #F2D2BD;
+  --second-teks-color: #e6e2df;
+  --bg-color: #a69084;
+  --second-bg-color: #333333;
+  --text-color: #5d001e;
+  --main-color: #C4A484;
+}
+
+body {
+  background: #E3e2df;
+  color: var(--text-color);
+}
+
+.css */
+body.light-theme {
+  background-color: white;
+  color: black;
+}
+
+body.dark-theme {
+  background-color: grey;
+  color: white;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 10%;
+  display: flex;
+  justify-content: center; /* Pusatkan konten */
+  align-items: center;
+  z-index: 100;
+  /* backdrop-filter: blur (30px);
+  box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
+  border: 1.5px solid rgba(255, 255, 255, 0.18); */
+  background-color: darkred;
+}
+
+.navbar {
+  display: flex;
+  gap: 2rem;
+}
+
+.logo {
+  margin-right: auto; /* Geser logo ke kiri */
+}
+
+#menu-icon {
+  font-size: 3.6rem;
+  color: white;
+  display: none;
+}
+
+
+
+.home-content .berata {
+  color :#ee4c7c ;
+}
+
+.home-content .auto-type {
+  color: black;
+}
+
+/* about */
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  background-color: var(--second-teks-color);
+  flex-direction: column-reverse;
+    width: 100%;  /* Full width of the page */
+    min-height: 1000px;  /* Adjust the height */
+}
+
+.about-content {
+  text-align: center;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+    padding-left: 180px; /* Pastikan ada ruang untuk gambar */
+    margin-bottom: 30rem;
+
+}
+
+.about-content img {
+  position: absolute;
+  left: 5vh; /* Sesuaikan dengan kebutuhan */
+  bottom: 10rem;
+  width: 25rem; /* Sesuaikan ukuran gambar */
+}
+
+
+.p-title {
+  position: absolute;
+  z-index: 1;
+  margin-bottom: 16em;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  left: 39vh;
+}
+
+
+
+hr {
+  position: absolute;
+  border: 2px solid gray;
+  width: 30%;
+  margin-bottom: 50vh;
+  left: 39vh;
+}
+
+.p-about {
+  position: absolute;
+  z-index: 1;
+  margin-bottom: 16em;
+  font-size: 20px;
+  left: 39vh;
+}
+
+.about-p {
+  position: relative;
+  max-width: 700px;
+  left: 14rem;
+  margin-bottom: 15rem;
+  text-align: left;
+  line-height: 20px;
+  word-spacing: normal;
+  font-size: 15px;
+  color : black;
+}
+
+.about-content a {
+  position: relative;
+  border: 2px solid black;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  display: inline-block;
+  color: black;
+  font-weight: 600;
+  top: 1rem;
+  right: 57rem;
+  border-radius: 10px;
+  text-decoration: none;
+  margin: 5px;
+}
+
+.about-content a:hover {
+  background-color: black;
+  color: white ;
+  transition: 0.3s ease;
+  transform: scale(1.1);
+}
+
+/* about end */
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 3rem;
+  color: var(--text-color);
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.logo-img {
+  width: 5rem;
+  height: auto;
+  margin-right: 1.2rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  color: var(--second-bg-color);
+}
+
+span {
+  color: var(--second-teks-color);
+}
+
+.navbar a {
+  position: relative;
+  font-size: 1.8rem;
+  color: white;
+  font-weight: 500;
+  margin-left: 3rem;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s ease;
+  right: 35rem;
+  padding: 10px;
+  justify-content: center;
+}
+
+.navbar a:hover {
+  color: var(--second-bg-color);
+  background-color: lightcoral;
+  color: black ;
+  transition: 0.3s ease;
+  transform: scale(1.1);
+  border-radius: 20px;
+  
+}
+
+section {
+  min-height: 100vh;
+  padding: 10rem 10%;
+}
+
+
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Memisahkan teks dan gambar */
+  margin-top: 1rem;
+  gap: 15rem;
+  
+}
+
+
+.home-content h1 {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 1rem; /* Memberikan jarak antara "Muffinzz" dan teks tambahan */
+  max-width: 600px;
+}
+
+.home-content p {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  max-width: 600px;
+  margin: 2rem auto;
+  margin-left: 2px;
+  font-weight: 400;
+}
+
+.home-content .subheading {
+  font-size: 2rem; /* Ukuran font */
+  color: var(--main-color); /* Warna teks */
+  margin-bottom: 2rem; /* Jarak antara teks tambahan dan paragraf */
+  font-weight: 500; /* Ketebalan font */
+  text-transform: uppercase; /* Mengubah teks menjadi huruf kapital */
+  letter-spacing: 0.1rem; /* Spasi antar huruf */
+}
+
+.social-icons {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.social-icons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  font-size: 2.5rem;
+  color: var(--text-color);
+  background-color: transparent;
+  border: 2px solid var(--second-bg-color);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: var(--second-teks-color);
+  background-color: var(--second-bg-color);
+  transform: scale(1.1);
+  box-shadow: 0 0 10px var(--second-bg-color);
+}
+
+.music-button {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: transparent;
+  color: var(--text-color);
+  border: 2px solid var(--main-color);
+  border-radius: 50%;
+  padding: 1rem;
+  font-size: 2.4rem;
+  cursor: pointer;
+  z-index: 1000;
+  display: none;
+  box-shadow: 0 0 15px var(--main-color);
+}
+
+.music-button:hover {
+  box-shadow: 0 0 20px var(--main-color), 0 0 50px var(--main-color);
+}
+
+.music-button.show {
+  display: block;
+}
+.home-img img {
+  width: 22vw;
+  height: 22vw; /* Pastikan tinggi dan lebar sama untuk bentuk oval sempurna */
+  border-radius: 60%; /* Membuat gambar berbentuk oval */
+  object-fit: cover; /* Memastikan gambar menutupi area tanpa distorsi */
+  object-position: top; /* Fokus pada bagian kepala gambar */
+  box-shadow: 0 0 25px var(--text-color);
+  transition: 0.4s ease-in-out;
+  animation: floatImage 4s ease-in-out infinite;
+}
+
+.home-img img:hover {
+  box-shadow: 0 0 25px #5D001E, 0 0 50px #5D001E,
+    0 0 100px #5D001E;
+}
+
+.footer {
+  background-color: var(--bg-color);
+  padding: 50px 0;
+}
+
+.footer ul {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.footer ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.footer ul li a {
+  color: white;
+  border-bottom: 3px solid transparent;
+  transition: 0.3s ease-in-out;
+}
+
+.footer ul li a:hover {
+  border-bottom: 3px solid var(--main-color);
+}
+
+footer.footer {
+  visibility: visible;
+  opacity: 1;
+  transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0);
+  transition: all, opacity 2s cubic-bezier(0.5, 0, 0, 1) 0.2s,
+    transform 2s cubic-bezier(0.5, 0, 0, 1) 0, 2s;
+}
+
+.footer .copyright {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 16px;
+}
+
+.btn-groub {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 3rem;
+  background: var(--main-color);
+  box-shadow: 0 0 25px var(--main-color);
+  border-radius: 3rem;
+  font-size: 1.8rem;
+  color: black;
+  border: 2px solid transparent;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+}
+
+/* Container untuk running text */
+.running-text-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: rgba(242, 210, 189, 0.5);
+  padding: 16px 0;
+  font-size: large;
+  margin-top: -60px;
+  font-weight: 600;
+  color: #5d001e;
+}
+
+/* Teks yang akan berjalan */
+.running-text {
+  display: inline-block;
+  padding-left: 100%; /* Mulai dari luar layar */
+  animation: running-text 14s linear infinite;
+}
+
+/* Animasi untuk running text */
+@keyframes running-text {
+  0% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+.card-overlay {
+  margin-top: 20rem; /* Beri jarak dari paragraf */
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  position: absolute;
+  width: 250px;
+  height: 30rem;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 0 10px;
+  right: 70rem;
+  top: 24rem;
+  justify-content: space-between;
+}
+
+.cardd {
+  position: absolute;
+  width: 250px;
+  height: 30rem;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 0 10px;
+  right: 40rem;
+  top: 24rem;
+}
+
+.cardd li {
+  padding: 2px;
+  color: black;
+}
+.cardd p {
+  font-weight: 500;
+  padding: 10px;
+  text-align: center;
+  color: black;
+}
+
+.cardd-p {
+  font-weight: 600;
+  padding: 10px;
+}
+
+.cardd:hover  {
+  color: darkred ;
+  cursor: pointer;
+  transition: 0.3s ease;
+  transform: scale(1.1);
+}
+
+.card p {
+  font-weight: 500;
+  padding: 10px;
+  text-align: center;
+  color: black;
+}
+.card:hover  {
+  color: darkred;
+  cursor: pointer;
+  transition: 0.3s ease;
+  transform: scale(1.1);
+}
+
+.card .card-paragraph {
+  font-weight: 100;
+}
+
+.carddd {
+  position: absolute;
+  width: 250px;
+  height: 30rem;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 0 10px;
+  right: 10rem;
+  top: 24rem;
+}
+
+.carddd p {
+  font-weight: 500;
+  padding: 10px;
+  text-align: center;
+  color: black;
+}
+
+.carddd:hover  {
+  color: darkred;
+  cursor: pointer;
+  transition: 0.3s ease;
+  transform: scale(1.1);
+}
