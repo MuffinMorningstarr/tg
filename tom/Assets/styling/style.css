@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -521,4 +523,165 @@ footer.footer {
   cursor: pointer;
   transition: 0.3s ease;
   transform: scale(1.1);
+}
+
+.button-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Jarak antar tombol */
+  margin-top: 40rem; /* Menyesuaikan jarak dari elemen di atasnya */
+  left: 24%;
+}
+
+.custom-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 250px; /* Lebih kecil dari sebelumnya */
+  height: 65px; /* Lebih kecil dari sebelumnya */
+  background-color: #ee4c7c;
+  border-radius: 50px;
+  padding: 0 25px; /* Sedikit dikurangi */
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+.custom-button:hover {
+  transform: scale(1.04);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.button-text {
+  font-size: 14px; /* Sedikit lebih kecil */
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: black;
+  flex: 1;
+  text-align: center;
+}
+
+.icon-circle {
+  width: 40px; /* Lebih kecil dari sebelumnya */
+  height: 40px; /* Lebih kecil dari sebelumnya */
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.icon-circle i {
+  color: darkred;
+  font-size: 20px; /* Lebih kecil dari sebelumnya */
+}
+
+.card-group {
+  display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 kolom */
+    grid-template-rows: repeat(2, auto); /* 2 baris */
+    gap: 10px; /* Kurangi jarak antar elemen */
+    justify-content: center; /* Pusatkan konten */
+    align-items: center; /* Rapatkan vertikal */
+  position: relative;
+  left: 70rem;
+}
+
+.kartu {
+  width: 225px;
+  height: 340px;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+.kartu img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+
+
+.kartu .layer {
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 75%;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.kartu .info {
+  position: absolute;
+  bottom: -50%;
+  padding: 15px;
+  opacity: 0;
+  transition: 0.5s bottom, 1.75s opacity;
+}
+
+.info p {
+  font-size: 14px;
+  margin-top: 3px;
+  color: white;
+}
+
+.info button {
+  background: #490ccc;
+  border: none;
+  padding: 8px 12px;
+  font-weight: bold;
+  border-radius: 8px;
+  margin-top: 8px;
+}
+
+.kartu:hover, .kartu:hover img, .kartu:hover layer {
+  transform: scale(1.1);
+}
+
+.kartu:hover > .layer {
+  opacity: 1;
+}
+
+.kartu:hover > .info {
+  bottom: 0;
+  opacity: 1;
+}
+
+.card-group:hover > .kartu:not(:hover) {
+  filter: blur(3px);
+}
+
+.info h1 {
+  color: white;
+  font-weight: 800;
+}
+
+.meet {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 100px;
+  max-width: 500px;
+}
+
+.our-team {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 100px;
+  max-width: 500px;
+}
+
+.meet-our-team {
+  position: relative;
+  left: 200px;
 }
