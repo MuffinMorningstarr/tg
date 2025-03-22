@@ -686,3 +686,205 @@ footer.footer {
   left: 200px;
 }
 
+.our-content {
+  padding: 8rem 10%;
+  background-color: var(--second-teks-color);
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.meet-our-team {
+  text-align: center;
+  margin-bottom: 5rem;
+  position: relative;
+  left: 0;
+}
+
+.meet {
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  font-size: 6rem;
+  color: var(--text-color);
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+.our-team {
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  font-size: 4.5rem;
+  color: #ee4c7c;
+  line-height: 1;
+  margin-top: 1rem;
+}
+
+
+.card-slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
+  overflow: hidden;
+}
+
+.card-slider {
+  display: flex;
+  gap: 3rem;
+  transition: transform 0.5s ease;
+  padding: 0 2rem;
+}
+
+.team-card {
+  flex: 0 0 280px;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+.team-card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 2rem auto 1rem;
+  display: block;
+  border: 4px solid var(--main-color);
+}
+
+.card-content {
+  padding: 1.5rem 2rem;
+  text-align: center;
+}
+
+.card-content h3 {
+  font-size: 2.2rem;
+  color: var(--text-color);
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
+
+.card-content p {
+  font-size: 1.5rem;
+  color: #777;
+  font-weight: 400;
+}
+
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.95);
+  border: 2px solid var(--main-color);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 2.5rem;
+  color: var(--text-color);
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.slider-btn:hover {
+  background: var(--main-color);
+  color: white;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.prev-btn {
+  left: 0;
+}
+
+.next-btn {
+  right: 0;
+}
+
+.modal-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+  border: 4px solid var(--main-color);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  position: relative;
+  animation: slideIn 0.3s ease;
+}
+
+.modal-name {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.modal-role {
+  font-size: 1.8rem;
+  color: #777;
+  margin-bottom: 1.5rem;
+}
+
+.modal-bio {
+  font-size: 1.5rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.close-modal {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 3rem;
+  color: #777;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close-modal:hover {
+  color: var(--text-color);
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

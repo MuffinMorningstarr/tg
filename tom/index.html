@@ -20,12 +20,13 @@
     <header class="header">
       <a href="#home" class="logo"><span class="type-auto">Biografi </span></a>
       <i class="bx bx-menu" id="menu-icon"></i>
+      
 
       <nav class="navbar">
         <a href="#home" class="active">Home</a>
         <a href="#about">Sejarah</a>
         <a href="#kartu-riwayat">Riwayat</a>
-        <a href="#">About Us</a>
+        <a href="#member">About Us</a>
       </nav>
       <!-- <button id="checkbox">Toggle Theme</button> -->
     </header>
@@ -140,20 +141,80 @@
       </div>
     </section>
 
-    <section class="our-content" id="member">
+    ```
+<section class="our-content" id="member">
       <div class="meet-our-team">
         <h1 class="meet">Meet</h1>
         <h2 class="our-team">Our Team</h2>
       </div>
+      
+      <div class="card-slider-container">
+        <div class="card-slider">
+          <div class="team-card">
+            <img src="Assets/pict/kevin.jpg" alt="Team Member 1">
+            <div class="card-content">
+              <h3>Al kevin adista doe onggara/01</h3>
+              <p>Wawancara</p>
+            </div>
+          </div>
+          <div class="team-card">
+            <img src="Assets/pict/arjun.jpg" alt="">
+            <div class="card-content">
+              <h3>I Putu Kananda Candra Wijaya/21</h3>
+              <p>Pembuat Website</p>
+            </div>
+          </div>
+          <div class="team-card">
+            <img src="Assets/pict/indra.jpg" alt="Team Member 3">
+            <div class="card-content">
+              <h3>Indra Riski Ramadana/22</h3>
+              <p>Wawancara</p>
+            </div>
+          </div>
+          <div class="team-card">
+            <img src="Assets/pict/jovan.png" alt="Team Member 4">
+            <div class="card-content">
+              <h3>Jovanimo dimitri yose/23</h3>
+              <p>Design Website</p>
+            </div>
+          </div>
+          <div class="team-card">
+            <img src="Assets/pict/nitha.jpeg" alt="Team Member 1">
+            <div class="card-content">
+              <h3>Ni Luh Nitha Anindya Putri/30</h3>
+              <p>Wawancara</p>
+            </div>
+          </div>
+          <div class="team-card">
+            <img src="Assets/pict/iyel.jpg" alt="Team Member 1">
+            <div class="card-content">
+              <h3>Nyoman Adriel Marchello/31</h3>
+              <p>Design Website</p>
+            </div>
+          </div>
+        </div>
+        <button class="slider-btn prev-btn"><i class='bx bx-left-arrow-alt'></i></button>
+        <button class="slider-btn next-btn"><i class='bx bx-right-arrow-alt'></i></button>
+      </div>
     </section>
+```
+    <div class="modal" id="teamModal">
+      <div class="modal-content">
+        <span class="close-modal">×</span>
+        <img src="" alt="Team Member" class="modal-img">
+        <h3 class="modal-name"></h3>
+        <p class="modal-role"></p>
+        <p class="modal-bio"></p>
+      </div>
+    </div>
 
     <!-- Footer Section -->
     <footer class="footer">
       <ul class="list">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">Sejarah</a></li>
-        <li><a href="#discord">Riwayat</a></li>
-        <li><a href="#portfolio">About Us</a></li>
+        <li><a href="#kartu-riwayat">Riwayat</a></li>
+        <li><a href="#member">About Us</a></li>
       </ul>
       <p class="copyright">© MuffinOhayo | All Rights Reserved</p>
     </footer>

@@ -22,7 +22,7 @@
     transition: all 0.3s ease-in-out;
     white-space: nowrap; 
     text-align: center;
-    right: 43rem;
+    right: 70rem;
   }
 
   .navbar {
@@ -30,7 +30,7 @@
     left: 40rem;
   }
 }
-
+/* buat macbook */
 @media (max-width: 1664px) {
     .button-container {
         position: absolute;
@@ -55,7 +55,7 @@
         transition: all 0.3s ease-in-out;
         white-space: nowrap; 
         text-align: center;
-        right: 43rem;
+        right: 57rem;
       }
     
       .navbar {
@@ -63,3 +63,329 @@
         left: 40rem;
       }
 }
+
+@media (max-width: 926px) {
+    .home-img {
+        position: relative;
+        right: 23rem;
+        top: -10rem;
+        justify-content: center;
+    }
+
+    .home-img img {
+        width: 23vh;
+        height: 100%;
+    }
+
+    .home-content h1 {
+        position: relative;
+        left: 16rem;
+        top: 15rem;
+        font-size: 25px;
+        text-align: center;
+        align-items: center;
+        white-space: nowrap;
+    }
+
+    .auto-type {
+        position: relative;
+        left: 22rem;
+        top: 15rem;
+        font-size: 25px;
+        text-align: center;
+        align-items: center;
+        white-space: nowrap;
+    }
+
+    .social-icons {
+        position: relative;
+        left: 22rem;
+        top: 15rem;
+        font-size: 25px;
+        text-align: center;
+        align-items: center;
+        white-space: nowrap;
+    }
+
+    .button-container {
+        position: absolute;
+        display: flex;
+        top: 40rem;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+      font-size: 55%;
+    }
+  
+    .header {
+      padding: 1.5rem 5%;
+      justify-content: space-between;
+    }
+  
+    .logo {
+      font-size: 2.5rem;
+    }
+  
+    .navbar {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: darkred;
+      flex-direction: column;
+      padding: 1rem 0;
+      gap: 1rem;
+    }
+  
+    .navbar.active {
+      display: flex;
+    }
+  
+    .navbar a {
+      font-size: 1.6rem;
+      margin-left: 0;
+      right: 0;
+      padding: 1rem;
+      text-align: center;
+    }
+  
+    #menu-icon {
+      display: block;
+    }
+  
+    .home {
+      flex-direction: column;
+      gap: 5rem;
+      padding: 8rem 5%;
+    }
+  
+    
+  
+    .home-content .subheading {
+      font-size: 1.8rem;
+    }
+    .home-img {
+        position: relative;
+        right: 0rem;
+        top: -15rem;
+        justify-content: center;
+    }
+
+    .home-img img {
+        width: 23vh;
+        height: 100%;
+    }
+
+    .home-content h1 {
+        position: relative;
+        left: 0rem;
+        top: 30rem;
+        font-size: 25px;
+        text-align: center;
+        align-items: center;
+        white-space: nowrap;
+    }
+
+    .auto-type {
+        position: relative;
+        left: 8rem;
+        top: 30rem;
+        font-size: 25px;
+        text-align: center;
+        align-items: center;
+        white-space: nowrap;
+    }
+
+    .social-icons {
+        position: relative;
+        left: 8rem;
+        top: 30rem;
+        font-size: 25px;
+        text-align: center;
+        align-items: center;
+        white-space: nowrap;
+    }
+
+    .about-p {
+        text-align: center;
+    }
+    
+  
+    .button-container {
+      position: relative;
+      margin-top: 2rem;
+      left: 0;
+      top: 5rem;
+      gap: 1rem;
+    }
+  
+    .custom-button {
+      width: 200px;
+      height: 55px;
+    }
+  
+    .about {
+      padding: 8rem 5%;
+      min-height: auto;
+    }
+  
+    .about-content {
+      flex-direction: column;
+      padding-left: 0;
+      margin-bottom: 10rem;
+    }
+  
+    .about-content img {
+      position: relative;
+      left: 0;
+      bottom: 0;
+      width: 20rem;
+      margin-bottom: 2rem;
+    }
+  
+    .p-title {
+      position: relative;
+      left: 0;
+      margin-bottom: 2rem;
+      font-size: 2.5rem;
+    }
+  
+    hr {
+      position: relative;
+      left: 0;
+      margin-bottom: 2rem;
+      width: 50%;
+    }
+  
+    .p-about {
+      position: relative;
+      left: 0;
+      margin-bottom: 2rem;
+      font-size: 1.8rem;
+    }
+  
+    .about-p {
+      left: 0;
+      margin-bottom: 2rem;
+      max-width: 100%;
+    }
+  
+    .about-content a {
+      right: 0;
+      padding: 0.8rem 1.5rem;
+      font-size: 1.4rem;
+    }
+  
+    .card-overlay {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 5rem;
+    }
+  
+    .card,
+    .cardd,
+    .carddd {
+      position: relative;
+      right: 0;
+      top: 0;
+      width: 90%;
+      margin: 1rem 0;
+      height: auto;
+    }
+  
+    .our-content {
+      padding: 5rem 5%;
+    }
+  
+    .meet {
+      font-size: 4rem;
+    }
+  
+    .our-team {
+      font-size: 3rem;
+    }
+  
+    .card-slider-container {
+      padding: 1rem 0;
+    }
+  
+    .card-slider {
+      gap: 2rem;
+    }
+  
+    .team-card {
+      flex: 0 0 250px;
+    }
+  
+    .team-card img {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .card-content h3 {
+      font-size: 1.8rem;
+    }
+  
+    .card-content p {
+      font-size: 1.3rem;
+    }
+  
+    .slider-btn {
+      width: 40px;
+      height: 40px;
+      font-size: 2rem;
+    }
+  
+    .footer {
+      padding: 30px 5%;
+    }
+  
+    .footer ul li {
+      margin-left: 10px;
+    }
+  
+    .footer ul li a {
+      font-size: 1.6rem;
+    }
+  
+    .footer .copyright {
+      font-size: 1.4rem;
+    }
+    .team-card img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+      }
+      
+      .modal-content {
+        width: 90%;
+        max-width: 350px;
+        padding: 1.5rem;
+      }
+      
+      .modal-img {
+        width: 150px;
+        height: 150px;
+        border-radius: 10px;
+      }
+      
+      .modal-name {
+        font-size: 2rem;
+      }
+      
+      .modal-role {
+        font-size: 1.5rem;
+      }
+      
+      .modal-bio {
+        font-size: 1.3rem;
+      }
+      
+      .close-modal {
+        font-size: 2.5rem;
+      }
+      
+  }
