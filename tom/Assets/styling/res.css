@@ -1,0 +1,65 @@
+@media (max-width: 1280px) {
+  .button-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+    margin-top: 40rem; 
+    left: 12rem;
+  }
+
+  .about-content a {
+    position: relative;
+    border: 2px solid black;
+    padding: 1rem 3rem; 
+    margin-top: 2rem;
+    display: inline-block;
+    color: black;
+    font-weight: 600;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 5px;
+    transition: all 0.3s ease-in-out;
+    white-space: nowrap; 
+    text-align: center;
+    right: 43rem;
+  }
+
+  .navbar {
+    position: relative;
+    left: 40rem;
+  }
+}
+
+@media (max-width: 1664px) {
+    .button-container {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        gap: 15px; 
+        margin-top: 40rem; 
+        left: 20rem;
+      }
+    
+      .about-content a {
+        position: relative;
+        border: 2px solid black;
+        padding: 1rem 3rem; 
+        margin-top: 2rem;
+        display: inline-block;
+        color: black;
+        font-weight: 600;
+        border-radius: 10px;
+        text-decoration: none;
+        margin: 5px;
+        transition: all 0.3s ease-in-out;
+        white-space: nowrap; 
+        text-align: center;
+        right: 43rem;
+      }
+    
+      .navbar {
+        position: relative;
+        left: 40rem;
+      }
+}

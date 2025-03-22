@@ -588,7 +588,7 @@ footer.footer {
   left: 70rem;
 }
 
-.kartu {
+/* .kartu {
   width: 225px;
   height: 340px;
   border-radius: 16px;
@@ -661,7 +661,7 @@ footer.footer {
 .info h1 {
   color: white;
   font-weight: 800;
-}
+} */
 
 .meet {
   font-family: "Outfit", sans-serif;
@@ -685,3 +685,4 @@ footer.footer {
   position: relative;
   left: 200px;
 }
+
